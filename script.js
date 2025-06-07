@@ -1,5 +1,14 @@
+const userInput = document.getElementById("userInput");
+
+userInput.addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault(); // prevent newline
+    sendMessage();
+  }
+});
+
 async function sendMessage() {
-  const userText = document.getElementById("userInput").value.trim();
+  const userText = userInput.value.trim();
   if (!userText) return;
 
   const chatbox = document.getElementById("chatbox");
