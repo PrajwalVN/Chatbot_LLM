@@ -21,7 +21,7 @@ async function sendMessage() {
         method: "POST",
         headers: {
           Authorization:
-            "Bearer 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", // <-- replace this
+            "Bearer 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",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
